@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zxx" xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="head :: head">
+</head>
+
+<body>
+
+<th:block th:include="body :: body_main"></th:block>
+
+<!-- Courses Details Section Begin -->
+<section class="course-details spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="course__details__desc">
+                    <img src="img/courses/details/course-details.jpg" alt="">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8">
+                            <div class="course__details__title">
+                                <h3>D’Hellas Elevator Systems</h3>
+                                <div class="price">Since 1978</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="course__details__rating">
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>( Thousands Of 5star Reviews )</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="course__details__text">We provide hatchback, sequence or crossover elevator systems for
+                        offices, hotels, banks, Government agencies around the world. And, we offer a flexible payment plan at no additional charge.
+                        You choose from one of the following payment options: Cheques; Bank Transfers; Direct Debit;
+                        All our engineers have earned solid certification to meet all of ISO requirements.
+                        We also offer 24 hours support, sales and maintainance of lifts and elevator systems.</p>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-md-3 col-sm-6">
+                            <div class="course__details__feature">
+                                <h5>Our Expertise</h5>
+                                <ul>
+                                    <li><i class="fa fa-check-circle-o"></i> <span>Sales and Repairs
+                                                (Elevator Machinery/Lift Systems)</span></li>
+                                    <li><i class="fa fa-check-circle-o"></i> <span>Design and Build (Complex Elevation System)
+                                    </span></li>
+                                    <li><i class="fa fa-check-circle-o"></i> <span>Training and Courses (Elevator Machinery)</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-md-3 col-sm-6">
+                            <div class="course__details__feature">
+                                <h5>Our Certifications</h5>
+                                <ul>
+                                    <li><i class="fa fa-check-circle-o"></i> <span>ISO Cerified</span></li>
+                                    <li><i class="fa fa-check-circle-o"></i> <span>Institue of France Engineering Certified
+                                                </span></li>
+                                    <li><i class="fa fa-check-circle-o"></i> <span>Engineering Association of England and Wales
+                                                Certified</span></li>
+                                    <li><i class="fa fa-check-circle-o"></i> <span>Eleanor
+                                                Award for Consistent Engineering Quality</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Courses Details Section End -->
+
+<th:block th:include="footer :: footer_main"></th:block>
+<th:block th:include="footer :: footer_script"></th:block>
+</body>
+
+</html>

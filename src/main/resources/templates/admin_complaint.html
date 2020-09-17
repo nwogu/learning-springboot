@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zxx" xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="head :: head">
+</head>
+
+<body>
+
+<th:block th:include="body :: body_main"></th:block>
+
+<!-- Breadcrumb Begin -->
+<div class="breadcrumb-option">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb__links">
+                    <a href="#"><i class="fa fa-home"></i> Home</a>
+                    <span>Complaint</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+
+<!-- Courses Details Section Begin -->
+<section class="course-details spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="">
+                    <th:block th:include="dashboard_admin :: menu"></th:block>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="course__details__desc">
+                    <div class="row">
+                    <div class="col-lg-6" th:each="complaint: ${complaints}">
+                        <div class="team__item">
+                            <div class="team__item__text">
+                                <h5 th:text="${complaint.orderNumber}">order number</h5>
+                                <p th:text="${'problem: ' + complaint.problem}">location.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Courses Details Section End -->
+
+<th:block th:include="footer :: footer_main"></th:block>
+<th:block th:include="footer :: footer_script"></th:block>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zxx" xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="head :: head">
+</head>
+
+<body>
+<!-- Courses Details Section Begin -->
+<section class="course-details spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="">
+                    <th:block th:fragment="menu">
+                    <div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                                    <a class="nav-link" id="v-pills-profile-tab"  href="#v-pills-profile"  th:href="@{/client/dashboard}" aria-controls="v-pills-profile" aria-selected="false">Orders</a>
+                                    <a class="nav-link" id="v-pills-messages-tab"  href="#v-pills-messages"  th:href="@{/client/feedback}" aria-controls="v-pills-messages" aria-selected="false">Feedbacks</a>
+                                    <a class="nav-link" id="v-pills-settings-tab"  href="#v-pills-settings" th:href="@{/client/complaint}"  aria-controls="v-pills-settings" aria-selected="false">Complaints</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </th:block>
+                    <div class="course__details__sidebar__register">
+                        <h5>Place New Order</h5>
+                        <form action="#" th:action="@{/client/order}" th:object="${order}" method="post">
+                            <div th:if="${param.success}">
+                                <div class="alert alert-success">Order Placed Successfully.
+                                </div>
+                            </div>
+                            <div th:if="${param.error}">
+                                <div class="alert alert-danger" th:text="${param.error}">An error occured
+                                </div>
+                            </div>
+                            <input type="text" placeholder="Location" name="location" th:field="*{location}">
+                            <input type="text" placeholder="Address" name="address" th:field="*{address}">
+                            <select name="type" th:field="*{type}">
+                                <option value="">Select Type</option>
+                                <option value="hatchback">Hatchback</option>
+                                <option value="sequence">Sequence</option>
+                                <option value="crossover">Crossover</option>
+                            </select>
+                            <select name="paymentType" th:field="*{paymentType}">
+                                <option value="">Select Payment Method</option>
+                                <option value="cheque">Cheque</option>
+                                <option value="bank_transfer">Bank Transfer</option>
+                                <option value="direct_debit">Direct Debit</option>
+                            </select>
+                            <button type="submit" class="site-btn second-bg">Place Order</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="course__details__desc">
+                    <div class="col-lg-6" th:each="order: ${orders}">
+                        <div class="team__item">
+                            <div class="team__item__text">
+                                <h5 th:text="${order.number}">order number</h5>
+                                <span th:text="${'status: ' + order.status}">status</span>
+                                <p th:text="${'type: ' + #strings.toUpperCase(order.type)}">type</p>
+                                <p th:text="${'address: ' + order.address}">location.</p>
+                                <p th:text="${'location: ' + order.location}">location.</p>
+                                <p th:text="${'cost: $' + order.cost + 'M'}">location.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+
+<th:block th:fragment="footer_main">
+<!-- Footer Section Begin -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="footer__widget">
+                    <h5>COMPANY</h5>
+                    <ul>
+                        <li><a href="#" th:href="@{/client/about}">About Us</a></li>
+                        <li><a href="#" th:href="@{/client/project}">Projects</a></li>
+                        <li><a href="#" th:href="@{/client/product}">Products</a></li>
+                        <li><a href="#" th:href="@{/client/complaint}">Submit Complaint</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="footer__widget">
+                    <h5>USEFUL LINKS</h5>
+                    <ul>
+                        <li><a href="#" th:href="@{/}">Home</a></li>
+                        <li><a href="#" th:href="@{/client/login}">Client Login</a></li>
+                        <li><a href="#" th:href="@{/admin/login}">Admin Login</a></li>
+                        <li><a href="#" th:href="@{/client/feedback}">Submit Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="footer__about">
+                    <h5 class="footer__logo">
+                        <!-- <a href="#"><img src="img/footer-logo.png" alt=""></a> -->
+                        D’Hellas
+                    </h5>
+                    <p>Address : 15 Division Street, New York, NY 12032, United States of America</p>
+                    <ul>
+                        <li>Phone : +0 (123) 456789</li>
+                        <li>Email : Kaseo@gmail.com</li>
+                        <li>Fax : +8 (123) 456 789</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <div class="footer__copyright__text">
+                    <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | D’Hellas</p>
+                </div>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Search Begin -->
+<div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch">+</div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Search here.....">
+        </form>
+    </div>
+</div>
+<!-- Search End -->
+</th:block>
+<th:block th:fragment="footer_script">
+
+<!-- Js Plugins -->
+    <script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/jquery.nice-select.min.js}"></script>
+    <script th:src="@{/js/jquery.magnific-popup.min.js}"></script>
+    <script th:src="@{/js/jquery-ui.min.js}"></script>
+    <script th:src="@{/js/jquery.slicknav.js}"></script>
+    <script th:src="@{/js/owl.carousel.min.js}"></script>
+    <script th:src="@{/js/main.js}"></script>
+</th:block>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zxx" xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="head :: head">
+</head>
+
+<body>
+
+<th:block th:include="body :: body_main"></th:block>
+
+<!-- Map Section Begin -->
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.6922976516967!2d6.177947315668516!3d48.692247379271585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4794986d7e30163d%3A0xefde6888a3af76a7!2s5%20Rue%20des%20Carmes%2C%2054000%20Nancy%2C%20France!5e0!3m2!1sen!2sng!4v1600119550057!5m2!1sen!2sng" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+<!-- Map Section End -->
+
+<!-- Contact Section Begin -->
+<section class="contact spad">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4 col-md-4">
+                <div class="contact__address">
+                    <h4>Contact info</h4>
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <p><span>Support@gmail.com</span><span>+ 1 212-683-9756</span></p>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <p>5 Rue des Carmes, 54000 Nancy, France</p>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <p><span>Mon - Sat : 8:00am - 5:00pm</span><span>Sunday: Closed</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section End -->
+
+
+<th:block th:include="footer :: footer_main"></th:block>
+<th:block th:include="footer :: footer_script"></th:block>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zxx" xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="head :: head">
+</head>
+
+<body>
+
+    <th:block th:include="body :: body_main"></th:block>
+    <!-- Hero Section Begin -->
+    <section class="hero set-bg" data-setbg="img/elevator-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="hero__text">
+                        <h5>Founded in 1987, We are the world's authority on quality elevator systems</h5>
+                        <h2>Tried , Tested & Trusted</h2>
+                        <a href="#" th:href="@{/client/contact}" class="primary-btn">Contact us</a>
+                        <a href="#" th:href="@{/client/dashboard}" class="primary-btn second-bg">Place an Order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Feature Section Begin -->
+    <section class="feature spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="feature__text">
+                        <div class="section-title">
+                            <span>Why choose us ?</span>
+                            <h2>Quality Systems</h2>
+                        </div>
+                        <p>Trusted by millions of people around the world, Our engineers produce the 
+                            best systems, with an eye for detail. We design, develop and perfect your lifting strategy. </p>
+                        <a href="#" th:href="@{/client/dashboard}" class="primary-btn second-bg">Place an Order</a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="feature__item">
+                                <img src="img/feature/feature-1.png" alt="">
+                                <h5>Unique Designs</h5>
+                            </div>
+                            <div class="feature__item">
+                                <img src="img/feature/feature-2.png" alt="">
+                                <h5>World class Engineering</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="feature__item right-column">
+                                <img src="img/feature/feature-3.png" alt="">
+                                <h5>On Time Delivery</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature Section End -->
+
+    <!-- About Video Section Begin -->
+    <section class="about-video">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 p-0">
+                    <div class="about__video__bg set-bg" data-setbg="img/video-el.jpg">
+                        <!-- <a href="https://www.youtube.com/watch?v=bGuHgRQSEuk" class="play-btn video-popup"><i
+                                class="fa fa-play"></i></a> -->
+                    </div>
+                </div>
+                <div class="col-lg-6 p-0">
+                    <div class="about__video__text">
+                        <div class="section-title">
+                            <span>Our Projects</span>
+                            <h2>The Lession Towers</h2>
+                        </div>
+                        <p>We recently installed our grade one elevator system at the Lession Towers in France. This project
+                            was commisioned and carried out within 3 weeks
+                        </p>
+                        <a href="#" th:href="@{/client/project}" class="primary-btn second-bg">See more Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section Begin -->
+    <section class="pricing spad set-bg" data-setbg="img/pricing-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title center-title">
+                        <span>Get Special Offer</span>
+                        <h2>Our Services</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="pricing__item">
+                        <div class="pricing__item__title">
+                            <span>20% off</span>
+                            <h2>Develop</h2>
+                            <h5>Early Bird</h5>
+                        </div>
+                        <ul>
+                            <li>Full system specification</li>
+                            <li>Full elevator designs</li>
+                            <li>First hand fabrication and development</li>
+                        </ul>
+                        <a href="#" th:href="@{/client/dashboard}" class="primary-btn second-bg">Place an Order</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="pricing__item">
+                        <div class="pricing__item__title">
+                            <span>20% off</span>
+                            <h2>Maintain</h2>
+                            <h5>Power Booster</h5>
+                        </div>
+                        <ul>
+                            <li>Elevator servicing</li>
+                            <li>Lift Diagnosis</li>
+                            <li>Elevator Repair</li>
+                        </ul>
+                        <a href="#" th:href="@{/client/dashboard}" class="primary-btn second-bg">Place an Order</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="pricing__item">
+                        <div class="pricing__item__title">
+                            <span>20% off</span>
+                            <h2>Sales</h2>
+                            <h5>Freight Support</h5>
+                        </div>
+                        <ul>
+                            <li></li>
+                            <li>Elevator Sales</li>
+                            <li>Elevator Marketing</li>
+                            <li>Post sales support</li>
+                        </ul>
+                        <a href="#" th:href="@{/client/dashboard}" class="primary-btn second-bg">Place an Order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section End -->
+
+    <!-- Team Section Begin -->
+    <section class="team spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7">
+                    <div class="section-title">
+                        <span>Testimonials</span>
+                        <h2>Our Customers</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="team__item">
+                        <div class="team__item__img">
+                            <img src="img/team/team-1.png" alt="">
+                        </div>
+                        <div class="team__item__text">
+                            <h5>DAVID WARNER</h5>
+                            <span>COO Lession Towers</span>
+                            <p>D’Hellas was a great choice for our company. They do a really good job</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team__item">
+                        <div class="team__item__img">
+                            <img src="img/team/team-2.png" alt="">
+                        </div>
+                        <div class="team__item__text">
+                            <h5>Steve Jacob</h5>
+                            <span>CEO Le'Monarch</span>
+                            <p>I love the speed of execution the team brings.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team__item">
+                        <div class="team__item__img">
+                            <img src="img/team/team-3.png" alt="">
+                        </div>
+                        <div class="team__item__text">
+                            <h5>Andrew Lemmon</h5>
+                            <span>Head of Sales, Hammin & Co.</span>
+                            <p>When we looked for a how to rennovate our lifting system, D’Hellas was a solid choice for us.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team__item">
+                        <div class="team__item__img">
+                            <img src="img/team/team-4.png" alt="">
+                        </div>
+                        <div class="team__item__text">
+                            <h5>Christopher Jekkins</h5>
+                            <span>CEO, Alexander Realtors</span>
+                            <p>D’Hellas is an ideal and reliable partner for lifting sytems</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <th:block th:include="footer :: footer_main"></th:block>
+    <th:block th:include="footer :: footer_script"></th:block>
+</body>
+
+</html>

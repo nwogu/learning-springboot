@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zxx" xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="head :: head">
+</head>
+
+<body>
+
+<th:block th:include="body :: body_main"></th:block>
+
+<section class="spad set-bg application-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title center-title">
+                    <h2>OOPS!! No Luck Here</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<th:block th:include="footer :: footer_main"></th:block>
+<th:block th:include="footer :: footer_script"></th:block>
+</body>
+
+</html>
